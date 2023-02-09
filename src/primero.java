@@ -9,9 +9,9 @@ public class primero {
             System.out.println("1. Imprimir contenido de arreglo de enteros(punto 1 y 4)");
             System.out.println("2. Imprimir contenido de arreglo de nombres(punto 2 y 5)");
             System.out.println("3. Imprimir contenido de arreglo de estudiantes(punto 3)");
-            System.out.println("4. Imprimir método para mostrar los contenidos de un arreglo");
-            System.out.println("5. Buscar valor en arreglo de enteros");
-            System.out.println("6. Eliminar valor en arreglo de enteros");
+            System.out.println("4. Imprimir método para mostrar los contenidos de un arreglo(punto 6)");
+            System.out.println("5. Buscar valor en arreglo de enteros(punto 7)");
+            System.out.println("6. Eliminar valor en arreglo de enteros(punto 8)");
             System.out.println("0. Salir");
             System.out.print("Seleccione una opción: ");
 
@@ -34,7 +34,7 @@ public class primero {
                     break;
                 case 6:
                 	int[] arrayEnteros = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-                    int valueToRemove = 5;//Escribe un método para eliminar un valor en un arreglo 
+                    int valueToRemove = 5;//Escribe un método para eliminar un valor en un arreglo(aqui se pone el valor a eliminar) 
                     arrayEnteros = removeValue(arrayEnteros, valueToRemove);
                     System.out.println("Arreglo después de eliminar el valor " + valueToRemove + ":");
                     printArray(arrayEnteros);
@@ -98,7 +98,7 @@ public class primero {
     public static void mainMethod5() {
         int[] arrayEnteros = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};//Escribe un método para buscar un valor en el arreglo.
 
-        int valueToSearch = 9;//para buscar el valor dependiendo del tamaño del arreglo
+        int valueToSearch = 9;//para buscar el valor dependiendo del tamaño del arreglo (inserta el valor que se busca en la posicion)
         int index = searchArray(arrayEnteros, valueToSearch);
         if (index != -1) {
             System.out.println("El valor " + valueToSearch + " se encuentra en el índice " + index + " del arreglo.");
@@ -106,7 +106,7 @@ public class primero {
             System.out.println("El valor " + valueToSearch + " no se encuentra en el arreglo.");
         }
     }
-
+//metodo 6
     public static int searchArray(int[] array, int value) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == value) {
